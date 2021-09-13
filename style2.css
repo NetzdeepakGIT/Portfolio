@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+::selection {
+  color: white;
+  background-color: black;
+}
+.container1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+}
+.container1 section {
+  min-width: 100%;
+  height: auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.dp img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 22%;
+  right: 31.5%;
+}
+.section1 {
+  width: 100%;
+  height: 95vh;
+  background-image: url("./bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.s2 {
+  position: relative;
+  background-color: whitesmoke;
+}
+.s2 h1 {
+  font-size: 5.5rem;
+  position: absolute;
+  top: 6%;
+  left: 45%;
+  font-family: "Satisfy", cursive;
+}
+.s2 h3 {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: lighter;
+}
+.languages img {
+  width: 25rem;
+  margin-left: 1rem;
+}
+.languages {
+  position: absolute;
+  top: 22%;
+  left: 17%;
+}
+.libraries {
+  position: absolute;
+  right: 8%;
+  top: 22%;
+}
+.libraries img {
+  margin-left: 4rem;
+}
+.version {
+  position: absolute;
+  right: 9.5%;
+  bottom: 10%;
+}
+.photoshop {
+  position: absolute;
+  left: 13%;
+  bottom: 10%;
+}
+.s3 {
+  background-color: white;
+  position: relative;
+}
+
+.dark-menu {
+  width: 56.5%;
+  height: 100vh;
+  position: absolute;
+  top: -100vh;
+  z-index: 1000;
+  background-color: black;
+  transition: 2s;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.dark-menu ul,
+.white-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70vh;
+}
+.dark-menu ul li {
+  color: white;
+  height: 5rem;
+  font-size: 4rem;
+  text-align: right;
+  letter-spacing: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.white-menu {
+  background-color: whitesmoke;
+  width: 43.5%;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  letter-spacing: 1rem;
+  top: -100vh;
+  z-index: 1999;
+  transition: 4s;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.white-menu ul li {
+  color: black;
+  height: 5rem;
+  font-size: 4rem;
+  text-align: left;
+  transform: translateX(-1.7rem);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.text-container p:nth-child(1) {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  color: #6d6d6d;
+  margin-top: 20rem;
+  font-size: 2rem; /* 22rem
+   */
+}
+.text-container p:nth-child(2) {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: #1a1a1a;
+  font-size: 5rem; /* 60rem */
+}
+.text-container p:nth-child(3) {
+  font-family: myraid regular;
+  color: #403e3e;
+  font-size: 2.5rem; /* 30rem */
+  line-height: 3rem;
+}
+.text-container p {
+  line-height: 0rem;
+  margin: 4.5rem 0rem 2.5rem;
+}
+.text-container {
+  position: absolute;
+  right: 10%;
+  top: 30%;
+  transform: translate(-13%, -42%);
+}
+.text-container button {
+  width: 13rem;
+  height: 3.8rem;
+  border-radius: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  outline: none;
+  margin: 0rem 0.3rem;
+}
+.hire-btn {
+  border: 0.2rem solid #373636;
+  color: #373636;
+}
+.down-cv {
+  background-color: #0b0b0b;
+  color: #ffffff;
+  border: none;
+}
+button:active {
+  transform: scale(1.1);
+}
+.model {
+  height: 36rem;
+  position: absolute;
+  bottom: 25%;
+  left: 16%;
+  z-index: 2;
+  /* transform: translateX(-65%); */
+}
+nav {
+  width: 8%;
+  height: 100vh;
+  display: flex;
+  padding-bottom: 4%;
+  flex-direction: column-reverse;
+  justify-content: end;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 7%;
+  left: 0;
+  width: 13rem;
+  height: 7rem;
+  color: white;
+  background-color: rgb(10, 10, 10);
+}
+.logo h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  font-size: 3rem;
+}
+/* hamburger menu start */
+.ham-outline {
+  border: 0.1rem solid black;
+  z-index: 1003;
+}
+.hamburger-menu {
+  width: 1.55rem;
+  margin: 0.8rem;
+  height: 1.5rem;
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.bar {
+  position: relative;
+  width: 1.2rem;
+  height: 0.2rem;
+  background-color: black;
+  border-radius: 0.2rem;
+  transition: all 0.5s ease-in-out;
+}
+.bar::before,
+.bar::after {
+  content: "";
+  position: absolute;
+  width: 1.2rem;
+  height: 0.2rem;
+  background-color: black;
+  border-radius: 0.2rem;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+}
+.bar::before {
+  transform: translateY(-0.5rem);
+}
+.bar::after {
+  transform: translateY(0.5rem);
+}
+/* bar animation */
+.hamburger-menu.open .bar {
+  transform: translateX(-1rem);
+  background: transparent;
+}
+.hamburger-menu.open .bar::before {
+  transform: rotate(45deg) translate(0.8rem, -0.8rem);
+  background-color: white;
+}
+.hamburger-menu.open .bar::after {
+  transform: rotate(-45deg) translate(0.8rem, 0.8rem);
+  background-color: white;
+}
+/* ham burger menu end */
+/* social icons start  */
+.social-icons {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  z-index: 2000;
+}
+.social1,
+.social2,
+.social3,
+.social4 {
+  background-color: black;
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+.social1:hover,
+.social2:hover,
+.social3:hover,
+.social4:hover {
+  transform: translateY(-2rem);
+  transition: 1.3s;
+}
+/* social icons ends */
+@media (max-width: 778px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 1000px) {
+  .model {
+    display: none;
+  }
+}
